@@ -1,0 +1,51 @@
+body{
+	background-color:gray;
+}
+#about{
+	background:url('../images/s5.PNG');
+	background-attachment:fixed;
+	background-size:cover;
+	background-repeat:no-repeat;
+
+}
+#gallery{
+	background:url('../images/s1.jpg');
+	background-attachment:fixed;
+	background-size:cover;
+	background-repeat:no-repeat;
+
+}
+#gallery .card .btn{
+	margin-top:135px;
+	display:none;
+}
+#gallery .card:hover .btn{
+	margin-top:135px;
+	display:block;
+}
+
+#gallery .card .box:hover{
+    background:#000000ab;
+}
+#newsPortals{
+	background:url('../images/s3.PNG');
+	background-attachment:fixed;
+	background-size:cover;
+	background-repeat:no-repeat;
+
+}
+#newsPortals .card .box{
+	display:none;
+}
+
+#newsPortals .card:hover .box{
+	background:gray;
+	display:block;
+}
+#contacts{
+    background:url('../images/s4.PNG');
+	background-attachment:fixed;
+	background-size:cover;
+	background-repeat:no-repeat;
+	margin:0px;
+}
