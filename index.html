@@ -5,11 +5,27 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-		<!-- Style Sheets -->
+		<!-- Company icon -->
 		<link rel="icon" href="images/favicon.ico">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-		<link rel="stylesheet" href="css/style.css" >
+		
+		<!--Fontawsome part -->
+		<link rel="stylesheet" href="css/all.css">
+		
+		<!--Stylesheet part -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		
+
+		<style>
+			[id*="-error"]{
+				color:yellow;
+				float:left;
+			}
+		</style>
+		<script rel="script" src="js/jquery-3.3.1.min.js" ></script>
+		<script rel="script" src="js/custom.js" ></script>
+     </head>
+
 		<title>www.mrp.com</title>
 	</head>
 	<body>
@@ -22,7 +38,7 @@
 						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarButton"><span class="navbar-toggler-icon"></span> </button>
 					<div class="collapse navbar-collapse" id="navbarButton">
 						<ul class="navbar-nav ml-auto">
-							  <li class="nav-item active"><a class="nav-link text-uppercase px-5 text-primary" href="welcome">Home <span class="sr-only">(current)</span></a></li>
+							  <li class="nav-item active"><a class="nav-link text-uppercase px-5 text-primary" href="#welcome">Home <span class="sr-only">(current)</span></a></li>
 							  <li class="nav-item"><a class="nav-link  text-uppercase px-5 text-primary" href="#about">About</a></li>
 							  <li class="nav-item"><a class="nav-link  text-uppercase px-5 text-primary" href="#gallery">Gallery</a></li>
 							  <li class="nav-item"><a class="nav-link  text-uppercase px-5 text-primary" href="#newsPortals">News & Portals</a></li>
@@ -50,7 +66,7 @@
 						<div class="header-inner">
 							<div class="container">
 								<div class="row pt-5">
-									<div class="col-6 col-custom">
+									<div class="col-sm-6 col-custom">
 										<h6 class="text-uppercase text-primary text-right">"A successful marriage requires falling in love many times, always with the same person</h6>
 										<h3 class="text-uppercase text-primary my-2 text-right">-Mignon McLaughlin<h3>
 									</div>
@@ -65,7 +81,7 @@
 						<div class="header-inner">
 							<div class="container">
 								<div class="row pt-5">
-									<div class="col-6 col-custom">
+									<div class="col-sm-12 col-custom">
 										<h6 class="text-uppercase text-primary text-right">"A successful marriage requires falling in love many times, always with the same person</h6>
 										<h3 class="text-uppercase text-primary my-2 text-right">-Mignon McLaughlin<h3>
 									</div>
@@ -80,7 +96,7 @@
 						<div class="header-inner">
 							<div class="container">
 								<div class="row pt-5">
-									<div class="col-6 col-custom">
+									<div class="col-sm-6 col-custom">
 										<h6 class="text-uppercase text-primary text-right">"A successful marriage requires falling in love many times, always with the same person</h6>
 										<h3 class="text-uppercase text-primary my-2 text-right">-Mignon McLaughlin<h3>
 									</div>
@@ -107,9 +123,7 @@
 					<div class="row py-5">
 						<div class="col-12 text-center">
 							<h2 class="text-capitalize text-primary text-center mb-3">About Us</h2>
-							<p class="w-100">===================================================================================================</p>
 							<h3 class="text-capitalize text-white text-center mb-3">Why You Choose Our Venue</h3>
-							<p class="w-100 pb-5">===================================================================================================</p>
 							<p class="text-white mb-3 text-center">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose </p>
 						</div>
 						<div class="col-12 my-3 text-center">
@@ -210,10 +224,7 @@
 				<div class="container">
 					<div class="row py-5">
 						<div class="col-12 text-center pb-4">
-							<p class="w-100">===================================================================================================</p>
 							<h3 class="text-capitalize text-primary">News Portals</h3>
-							<p class="w-100 pb-5">===================================================================================================</p>
-							<p class="text-capitalize text-muted"></p>
 						</div>
 						<div class="col-md-4 col-12 pb-2 px-2 text-center">
 							<div class="card bg-dark text-white">
@@ -306,23 +317,18 @@
 					<div class="row py-5">
 						<div class="col-12 text-center">
 							<h2 class="text-white text-capitalize pb-0">Contact Us</h2>
-							<p class="w-100">===================================================================================================</p>
 						</div>
 					</div>
 						<form class="form-row">
 							<div class="col-md-6 col-12">
 							  <div class="form-group">
-								<label for="email">Email address</label>
-								<input type="email" class="form-control" id="email" placeholder="Enter email">
+								<label for="name">User Name</label>
+								<input type="name" class="form-control" id="name" placeholder="Enter Your Name">
 							
 							  </div>
 							  <div class="form-group">
-								<label for="Password1">Password</label>
-								<input type="password" class="form-control" id="Password1" placeholder="Password">
-							  </div>
-							  <div class="form-group form-check">
-								<input type="checkbox" class="form-check-input" id="ok">
-								<label class="form-check-label" for="ok">Check me out</label>
+								<label for="email">Email Address</label>
+								<input type="email" class="form-control" id="email" placeholder="Enter Your email">
 							  </div>
 							 </div>
 							<div class="col-md-6 col-12 pb-5">
@@ -356,11 +362,11 @@
 
 
 
-	<!-- === Scripts === -->
-    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-	<!-- === Scripts === -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	
 	<script>
 		function buttonF(){
 			confirmation = confirm('Are You Sure to Submit?');

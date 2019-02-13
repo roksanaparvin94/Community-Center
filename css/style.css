@@ -1,6 +1,7 @@
 body{
 	background-color:gray;
 }
+
 #about{
 	background:url('../images/s5.PNG');
 	background-attachment:fixed;
@@ -9,7 +10,7 @@ body{
 
 }
 #gallery{
-	background:url('../images/s1.jpg');
+	background:url('../images/s1.PNG');
 	background-attachment:fixed;
 	background-size:cover;
 	background-repeat:no-repeat;
