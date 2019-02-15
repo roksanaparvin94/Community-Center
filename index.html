@@ -319,26 +319,26 @@
 							<h2 class="text-white text-capitalize pb-0">Contact Us</h2>
 						</div>
 					</div>
-						<form class="form-row">
+					<form name="contactForm" class="text-center" onsubmit="if(confirm('Do you want to submit It?'))
+					     { if(myvalidation()== false){ return false; }}else{event.preventDefault(); return false;}">
+						<div class="form-row">
 							<div class="col-md-6 col-12">
-							  <div class="form-group">
-								<label for="name">User Name</label>
-								<input type="name" class="form-control" id="name" placeholder="Enter Your Name">
+								<input type="name" name="name" value="" class="form-control mb-2" placeholder="Enter Your Name" onfocus="myFocus(this)">
+								<span id="name-error"></span>
+								<input type="email"  name="email" value="" class="form-control mb-2" placeholder="Enter Your Email" onfocus="myFocus(this)">
+								<span id="email-error"></span>
+							</div>
+							<div class="col-md-6 col-12">
+								<textarea type="message" name="message" value ="" class= "form-control m-0 h-100" placeholder="Enter Your message" onfocus="myFocus(this)"></textarea>
+								<span id="message-error"></span>
+							</div>
+						</div>
+						<div class="col-12">
+							<button type="submit" class="btn btn-primary text-uppercase px-4 py-2 mt-3">submit</button>
 							
-							  </div>
-							  <div class="form-group">
-								<label for="email">Email Address</label>
-								<input type="email" class="form-control" id="email" placeholder="Enter Your email">
-							  </div>
-							 </div>
-							<div class="col-md-6 col-12 pb-5">
-								<label class="message">Message Box</label>
-								<textarea type="text" class="form-control h-100" id="message" placeholder="Enter Your Message" ></textarea>
-							</div>
-							<div class="col-12 text-center py-5">
-								<button type="submit" class="btn btn-primary" onclick="buttonF()">Submit</button>
-							</div>
-						</form>
+						</div>
+					</form>
+
 				</div>
 			</Section>
 		</main>

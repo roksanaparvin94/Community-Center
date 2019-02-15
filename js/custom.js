@@ -1,32 +1,25 @@
 function myvalidation(){
 				var name = document.forms ['contactForm']['name'].value;
 				var email = document.forms ['contactForm']['email'].value;
-				var phone = document.forms ['contactForm']['phone'].value;
 				var message = document.forms ['contactForm']['message'].value;
 				
 				var error =[];
-				if( name == '' || name.lenght<3 ){
+				if( name == '' || name.length<3 ){
 					error[0]='Name Must be at least 3 Letters';
 					
 					document.getElementById('name-error').innerHTML = error[0];
 				}else{
 					document.getElementById('name-error').innerHTML ='';
 				}
-				if( email == '' || email.lenght<10 ){
+				if( email == '' || email.length<10 ){
 					error[1]='Please Insert a Valid Email';
 					
 					document.getElementById('email-error').innerHTML = error[1];
 				}else{
 					document.getElementById('email-error').innerHTML ='';
 				}
-				if( phone == '' || phone.lenght<11 ){
-					error[2]='Please Insert a Valid Phone Number';
-					
-					document.getElementById('phone-error').innerHTML = error[2];
-				}else{
-					document.getElementById('phone-error').innerHTML ='';
-				}
-				if( message == '' || message.lenght<50 ){
+				
+				if( message == '' || message.length<50 ){
 					error[3]='Message should be in 50 letters';
 					
 					document.getElementById('message-error').innerHTML = error[3];
@@ -34,7 +27,7 @@ function myvalidation(){
 					document.getElementById('message-error').innerHTML ='';
 				}
 				
-				if(error.lenght>0){
+				if(error.length>0){
 					return false;
 				}
 			}
