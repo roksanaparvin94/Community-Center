@@ -1,7 +1,7 @@
 body{
 	background-color:gray;
 }
-
+/* === About Part === */
 #about{
 	background:url('../images/s5.PNG');
 	background-attachment:fixed;
@@ -9,6 +9,7 @@ body{
 	background-repeat:no-repeat;
 
 }
+/* === Gallery Part === */
 #gallery{
 	background:url('../images/s1.PNG');
 	background-attachment:fixed;
@@ -28,6 +29,7 @@ body{
 #gallery .card .box:hover{
     background:#000000ab;
 }
+/* === News Portals === */
 #newsPortals{
 	background:url('../images/s3.PNG');
 	background-attachment:fixed;
@@ -43,10 +45,25 @@ body{
 	background:gray;
 	display:block;
 }
+/* === ontact Part === */
 #contacts{
     background:url('../images/s4.PNG');
 	background-attachment:fixed;
 	background-size:cover;
 	background-repeat:no-repeat;
 	margin:0px;
+}
+/* === Scroll Bar === */
+#upper{
+	position:fixed;
+	right:25px;
+	bottom:25px;
+	padding-top:10px;
+	display:none;
+}
+#upper i{
+	font-size:1.85rem;
+	color:white;
+	background-color:#4a4747ad;
+	border-radius:100%
 }
